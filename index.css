@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* ----- Header Section ----- */
+
+.header {
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  margin-left: 1.25em;
+}
+
+.nav-links {
+  margin-right: 1em;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #121111;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+/* ----- Hero Section ----- */
+
+.hero {
+  display: grid;
+  grid-template: auto / auto;
+  color: #fff;
+}
+
+.hero-img {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+}
+
+.hero-img img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.hero-text {
+  height: 100%;
+  padding-left: 0.75em;
+  padding-right: 3.75em;
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-shadow: 2px 2px 1px #090909;
+}
+
+p {
+  margin: 0;
+}
+
+.hero-date {
+  font-size: 0.75em;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.hero-title {
+  font-size: 1.75em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero-title:hover {
+  color: #e8e2e2;
+}
+
+.hero-description {
+  font-size: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* ----- Main Content ----- */
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 1em auto;
+  gap: 0 1em;
+}
+
+.blog-post {
+  width: 100%;
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
+.blog-date {
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+
+h2 {
+  margin: 0.25em 0;
+}
+
+.blog-description {
+  margin-bottom: 3em;
+}
+
+#last-blog-description {
+  margin-bottom: 0.5em;
+}
+
+.main-content img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+button {
+  margin: 0 auto 2.5em;
+  display: block;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/* ----- Footer ----- */
+
+.footer {
+  text-align: center;
+  background: #202020;
+}
+
+.footer-title {
+  margin: 1em 0 0 0;
+  padding-top: 1em;
+  color: #ececec;
+}
+
+.copyright {
+  margin: 0.25em 0 0 0;
+  padding-bottom: 1em;
+  color: #d7d7d7;
+}
+
+/* ----- Journey.html Page ----- */
+
+.hero-title-two {
+  font-size: 1.75em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.blog-content {
+  width: 90%;
+  margin: 1em auto;
+  gap: 0 1em;
+}
+  
+  .blog-img img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  .paragraph-title {
+    font-weight: 700;
+  }
+
+  .paragraph-content {
+    margin-top: 1.25em;
+  }
+
+/* ----- Media Queries ----- */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero-text {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    width: 25%;
+  }
+
+  .nav-link {
+    font-size: 0.9em;
+  }
+
+  .site-title {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-text {
+    font-size: 30px;
+    padding-right: 4em;
+  }
+
+  .nav-links {
+    width: 22%;
+  }
+
+  .nav-link {
+    font-size: 1.2em;
+  }
+
+  .site-title {
+    font-size: 1.75em;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero-text {
+    font-size: 30px;
+    padding-right: 6em;
+  }
+
+  .nav-links {
+    width: 20%;
+  }
+
+  .nav-link {
+    font-size: 1.4em;
+  }
+
+  .site-title {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1500px) {
+    .hero-text {
+        font-size: 35px;
+        padding-right: 8em;
+      }
+    
+      .nav-links {
+        width: 16%;
+        margin-right: 2em;
+      }
+    
+      .nav-link {
+        font-size: 1.7em;
+      }
+    
+      .site-title {
+        font-size: 3em;
+      }
+}
