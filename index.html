@@ -24,66 +24,35 @@
         </div>
       </nav>
     </header>
+<!-- below is the hero section. I wrapped it in an anchor tag so that
+the entire div with the image and text was clickable and would bring
+you to the journey.html page -->
+    <a class="hero-div" href="journey.html" target="_blank">
+      <section class="hero">
+        <div class="hero-img">
+          <img src="images/Computer-Desk.jpg" alt="computer desk setup" />
+        </div>
+        <div class="hero-text">
+          <p class="hero-date">February 10, 2023</p>
+          <p class="hero-title">My new journey as a bootcamp student.</p>
+          <p class="hero-description">
+            After several months of learning in the Frontend Developer Career
+            Path, I've made the big jump over to the Bootcamp to get the expert
+            code reviews of my Solo Projects and meet like-minded peers.
+          </p>
+        </div>
+      </section>
+    </a>
 
-    <section class="hero">
-      <div class="hero-img">
-        <img src="images/Computer-Desk.jpg" alt="computer desk setup" />
-      </div>
-      <div class="hero-text">
-        <p class="hero-date">February 10, 2023</p>
-        <p><a class="hero-title" href="journey.html" target="_blank">My new journey as a bootcamp student.</a></p>
-        <p class="hero-description">
-          After several months of learning in the Frontend Developer Career
-          Path, I've made the big jump over to the Bootcamp to get the expert
-          code reviews of my Solo Projects and meet like-minded peers.
-        </p>
-      </div>
-    </section>
-
-    <main class="main-content">
-      <div class="blog-post">
-        <img src="images/Coding.jpg" alt="computer screen with code on it" />
-        <p class="blog-date">February 10, 2023</p>
-        <h2>Blog One</h2>
-        <p class="blog-description">
-          I'm excited to start a new learning journey as a Scrimba Bootcamp
-          student! After several months of learning in the Frontend Developer
-          Career Path.
-        </p>
-      </div>
-      <div class="blog-post">
-        <img
-          src="images/Light-Bulb.jpg"
-          alt="computer screen with code on it"
-        />
-        <p class="blog-date">February 10, 2023</p>
-        <h2>Blog Two</h2>
-        <p class="blog-description">
-          I'm excited to start a new learning journey as a Scrimba Bootcamp
-          student! After several months of learning in the Frontend Developer
-          Career Path.
-        </p>
-      </div>
-      <div class="blog-post">
-        <img
-          src="images/Computer-Plant.jpg"
-          alt="computer screen with code on it"
-        />
-        <p class="blog-date">February 10, 2023</p>
-        <h2>Blog Three</h2>
-        <p class="blog-description" id="last-blog-description">
-          I'm excited to start a new learning journey as a Scrimba Bootcamp
-          student! After several months of learning in the Frontend Developer
-          Career Path.
-        </p>
-      </div>
-    </main>
-    <button type="button">View More</button>
+    <main id="main-content" class="main-content"></main>
+    <button type="button" class="view-more-btn" id="view-more-btn">
+      View More
+    </button>
 
     <footer class="footer">
       <p class="footer-title">My Learning Journal</p>
       <p class="copyright">Copyright 2023</p>
     </footer>
   </body>
-  <script src="index.js"></script>
+  <script src="index.js" type="module"></script>
 </html>

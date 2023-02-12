@@ -41,6 +41,10 @@ body {
 
 /* ----- Hero Section ----- */
 
+.hero-div {
+  text-decoration: none;
+}
+
 .hero {
   display: grid;
   grid-template: auto / auto;
@@ -88,8 +92,10 @@ p {
   text-decoration: none;
 }
 
-.hero-title:hover {
-  color: #e8e2e2;
+.hero:hover {
+  background: #e8e2e2;
+  opacity: .9;
+  cursor: pointer;
 }
 
 .hero-description {
@@ -110,8 +116,12 @@ p {
 
 .blog-post {
   width: 100%;
-  flex-basis: 200px;
+  flex-basis: 210px;
   flex-grow: 1;
+}
+
+.flex-change {
+  flex-basis: 380px;
 }
 
 .blog-date {
@@ -137,13 +147,18 @@ h2 {
   object-fit: cover;
 }
 
-button {
+.view-more-btn {
   margin: 0 auto 2.5em;
   display: block;
   background: none;
   border: none;
   text-decoration: underline;
   font-weight: 700;
+}
+
+.view-more-btn:hover {
+  cursor: pointer;
+  color: #5562ed;
 }
 
 /* ----- Footer ----- */
@@ -213,6 +228,10 @@ button {
   .site-title {
     font-size: 1.4em;
   }
+
+  .view-more-btn {
+    font-size: 1.2em;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -231,6 +250,10 @@ button {
 
   .site-title {
     font-size: 1.75em;
+  }
+
+  .view-more-btn {
+    font-size: 1.2em;
   }
 }
 
@@ -251,6 +274,10 @@ button {
   .site-title {
     font-size: 2em;
   }
+
+  .view-more-btn {
+    font-size: 1.2em;
+  }
 }
 
 @media (min-width: 1500px) {
@@ -270,5 +297,9 @@ button {
     
       .site-title {
         font-size: 3em;
+      }
+
+      .view-more-btn {
+        font-size: 1.2em;
       }
 }
