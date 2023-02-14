@@ -94,7 +94,7 @@ p {
 
 .hero:hover {
   background: #e8e2e2;
-  opacity: .9;
+  opacity: 0.9;
   cursor: pointer;
 }
 
@@ -114,14 +114,24 @@ p {
   gap: 0 1em;
 }
 
+.main-content > * {
+  display: none;
+}
+
+.main-content > *:nth-child(1),
+.main-content > *:nth-child(2),
+.main-content > *:nth-child(3) {
+  display: block;
+}
+
 .blog-post {
   width: 100%;
   flex-basis: 210px;
   flex-grow: 1;
 }
 
-.flex-change {
-  flex-basis: 380px;
+.display-post {
+  display: block;
 }
 
 .blog-date {
@@ -195,20 +205,20 @@ h2 {
   margin: 1em auto;
   gap: 0 1em;
 }
-  
-  .blog-img img {
-    width: 100%;
-    max-height: 500px;
-    object-fit: cover;
-  }
 
-  .paragraph-title {
-    font-weight: 700;
-  }
+.blog-img img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
 
-  .paragraph-content {
-    margin-top: 1.25em;
-  }
+.paragraph-title {
+  font-weight: 700;
+}
+
+.paragraph-content {
+  margin-top: 1.25em;
+}
 
 /* ----- Media Queries ----- */
 
@@ -232,6 +242,13 @@ h2 {
   .view-more-btn {
     font-size: 1.2em;
   }
+
+  .main-content > *:nth-child(1),
+  .main-content > *:nth-child(2),
+  .main-content > *:nth-child(3),
+  .main-content > *:nth-child(4){
+    display: block;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -252,8 +269,22 @@ h2 {
     font-size: 1.75em;
   }
 
+  .blog-post {
+    width: 100%;
+    flex-basis: 220px;
+    flex-grow: 1;
+  }
+
   .view-more-btn {
     font-size: 1.2em;
+  }
+
+  .main-content > *:nth-child(1),
+  .main-content > *:nth-child(2),
+  .main-content > *:nth-child(3),
+  .main-content > *:nth-child(4),
+  .main-content > *:nth-child(5) {
+    display: block;
   }
 }
 
@@ -275,31 +306,60 @@ h2 {
     font-size: 2em;
   }
 
+  .blog-post {
+    width: 100%;
+    flex-basis: 260px;
+    flex-grow: 1;
+  }
+
   .view-more-btn {
     font-size: 1.2em;
+  }
+
+  .main-content > *:nth-child(1),
+  .main-content > *:nth-child(2),
+  .main-content > *:nth-child(3),
+  .main-content > *:nth-child(4),
+  .main-content > *:nth-child(5),
+  .main-content > *:nth-child(6){
+    display: block;
   }
 }
 
 @media (min-width: 1500px) {
-    .hero-text {
-        font-size: 35px;
-        padding-right: 8em;
-      }
-    
-      .nav-links {
-        width: 16%;
-        margin-right: 2em;
-      }
-    
-      .nav-link {
-        font-size: 1.7em;
-      }
-    
-      .site-title {
-        font-size: 3em;
-      }
+  .hero-text {
+    font-size: 35px;
+    padding-right: 8em;
+  }
 
-      .view-more-btn {
-        font-size: 1.2em;
-      }
+  .nav-links {
+    width: 16%;
+    margin-right: 2em;
+  }
+
+  .nav-link {
+    font-size: 1.7em;
+  }
+
+  .site-title {
+    font-size: 3em;
+  }
+
+  .view-more-btn {
+    font-size: 1.2em;
+  }
+
+  .blog-post {
+    width: 100%;
+    flex-basis: 450px;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 2000px) {
+  .blog-post {
+    width: 100%;
+    flex-basis: 510px;
+    flex-grow: 1;
+  }
 }
